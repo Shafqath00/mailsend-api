@@ -25,7 +25,7 @@ app.post("/send-email", async (req, res) => {
         const { name, email, number, location, region, contexts, recipients = [] } = req.body;
 
         // Default recipients
-        const defaultRecipients = ["teabenchfranblr@gmail.com", "100fyn@gmail.com " ,"shafqathgame@gmail.com"];
+        const defaultRecipients = ["teabenchfranblr@gmail.com", "100fyn@gmail.com "];
         const allRecipients = [...defaultRecipients, ...recipients].join(",");
 
         // Email content
